@@ -1,5 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { InputButton } from '../calculator.component';
+
+export interface InputButton {
+  text: string;
+  color?: string;
+}
 
 @Component({
   selector: 'input-button',
@@ -11,5 +15,5 @@ export class InputButtonComponent {
     text: 'AC',
     color: 'white',
   };
-  @Output() buttonClick = new EventEmitter<string>();
+  @Output() buttonClick: EventEmitter<string> = new EventEmitter();
 }
