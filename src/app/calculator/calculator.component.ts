@@ -81,7 +81,6 @@ export class CalculatorComponent {
   outputs: string[] = [];
 
   buttonClicked(event: any) {
-    console.log(this.outputs);
     const lastValue = this.outputs.at(this.outputs.length - 1);
 
     switch (event) {
