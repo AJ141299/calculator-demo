@@ -1,0 +1,29 @@
+$height: 650px;
+$width: 320px;
+
+.container {
+  background-color: hsla(229,11%,12%,1.0);
+  border-radius: 15px;
+  height: $height;
+  width: $width;
+}
+
+.output-container {
+  height: calc($height * 0.35);
+}
+
+.input-container {
+  background-color: hsla(229,11%,16%,1.0);
+  border-radius: 15px;
+  height: calc($height * 0.65);
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  padding: 20px 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}

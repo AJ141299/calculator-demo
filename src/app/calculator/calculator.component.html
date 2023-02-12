@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="output-container"></div>
+  <div class="input-container">
+    <div class="grid">
+      <input-button
+      (buttonClick)="buttonClicked($event)"
+      [data]="input"
+      *ngFor="let input of inputs"
+    ></input-button>
+    </div>
+  </div>
+</div>
